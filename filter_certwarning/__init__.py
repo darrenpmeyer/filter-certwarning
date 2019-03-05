@@ -29,7 +29,7 @@ Examples:
             resp = requests.get('https://localhost/status', verify=False)
 
     The following supresses the warning entirely. **This is not recommended unless you've given a lot of thought
-    to the security implications and trade-offs.**
+    to the security implications and trade-offs.**::
 
         import requests
         import filter_certwarning
