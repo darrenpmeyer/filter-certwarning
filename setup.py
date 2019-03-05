@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='filter-certwarning',
-    version='0.2',
+    version='1.0',
     packages=['filter_certwarning'],
     install_requires=['urllib3'],
     url='https://github.com/darrenpmeyer/filter-certwarning',

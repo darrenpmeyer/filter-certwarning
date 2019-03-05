@@ -6,7 +6,7 @@ from warnings import catch_warnings, simplefilter
 mlog = logging.getLogger(__name__)
 
 
-def _filter(action='warnonce'):
+def _filter(action='once'):
     """Decorator to filter InsecureRequetWarnings when certificate verification is turned off
     """
     def decorator(function, *args, **kwargs):
@@ -23,7 +23,7 @@ def _filter(action='warnonce'):
 
 
 def warnonce(function):
-    decorator = _filter('warnonce')
+    decorator = _filter('once')
     return decorator(function)
 
 
